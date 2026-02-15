@@ -38,7 +38,9 @@ Telegram-бот для быстрого получения информации 
 
 Заполните файл .env:
 `TELEGRAM_BOT_TOKEN=your_telegram_bot_token`
+
 `REBRICK_TOKEN=your_rebrickable_api_token`
+
 `TELEGRAM_BOT_USERNAME=rebrickable_bot`
 
 
