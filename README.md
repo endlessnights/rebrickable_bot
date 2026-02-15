@@ -18,13 +18,13 @@ Telegram-бот для быстрого получения информации 
 ### Как пользоваться
 
 **Личные сообщения**
-10321
-42177
+`10321`
+`42177`
 
 
 **Группы / чаты**  
 Бот отвечает **только по упоминанию**:
-@rebrickable_bot 42177
+`@rebrickable_bot 42177`
 
 
 ---
@@ -37,6 +37,7 @@ Telegram-бот для быстрого получения информации 
 `cp .env.example .env`
 
 Заполните файл .env:
+
 `TELEGRAM_BOT_TOKEN=your_telegram_bot_token`
 
 `REBRICK_TOKEN=your_rebrickable_api_token`
@@ -44,5 +45,5 @@ Telegram-бот для быстрого получения информации 
 `TELEGRAM_BOT_USERNAME=rebrickable_bot`
 
 
-2️⃣ Запуск
-docker compose up -d
+### 2️⃣ Запуск
+`docker compose up -d`
