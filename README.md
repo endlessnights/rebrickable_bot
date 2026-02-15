@@ -37,10 +37,10 @@ Telegram-бот для быстрого получения информации 
 `cp .env.example .env`
 
 Заполните файл .env:
-`TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-REBRICK_TOKEN=your_rebrickable_api_token
-TELEGRAM_BOT_USERNAME=rebrickable_bot
-`
+`TELEGRAM_BOT_TOKEN=your_telegram_bot_token`
+`REBRICK_TOKEN=your_rebrickable_api_token`
+`TELEGRAM_BOT_USERNAME=rebrickable_bot`
+
 
 2️⃣ Запуск
 docker compose up -d
