@@ -1,0 +1,7 @@
+version: "3"
+services:
+  rebrickable_bot:
+    build: .
+    container_name: rebrickable_bot
+    env_file:
+      - .env
