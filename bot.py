@@ -15,6 +15,7 @@ from aiogram.enums import ChatType, ParseMode
 from aiogram.exceptions import TelegramBadRequest
 from aiogram.filters import Command
 from aiogram.types import BufferedInputFile
+from aiogram.types import LinkPreviewOptions
 
 dp = Dispatcher()
 
@@ -219,7 +220,20 @@ async def unified_message_handler(message: types.Message):
                 num = None
 
             if num is not None and looks_like_moc_id(num):
-                await bot.send_message(message.chat.id, f"🔎 Похоже на MOC\n🔗{moc_url_for_id(num)}")
+                url = moc_url_for_id(num)
+                await bot.send_message(
+                    message.chat.id,
+                    (
+                        f"Похоже на MOC 🔎\n"
+                        f"ID: <b>{num}</b>\n\n"
+                        f"🔗 <a href='{moc_url_for_id(num)}'><b>Rebrickable</b></a>"
+                    ),
+                    parse_mode="HTML",
+                    link_preview_options=LinkPreviewOptions(
+                        show_above_text=True,
+                        url=url,
+                    ),
+                )
             else:
                 # обычный сет не найден
                 if num_s:
